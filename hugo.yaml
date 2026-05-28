@@ -60,8 +60,8 @@ params:
     content: |
       A dedicated professional with 3+ years of experience in HIPAA-compliant medical records 
       management and high-volume customer service operations. Based in Las Vegas, NV.
-    image: /images/hero.svg
-    roundImage: false
+    image: "https://images.neurolearninglabs.com/i/c82b42e1-2c4a-4366-903c-afad637222e2.jpg"
+    roundImage: true
     button:
       enable: true
       name: "Contact Me"
@@ -80,7 +80,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    image: "https://images.neurolearninglabs.com/i/c82b42e1-2c4a-4366-903c-afad637222e2.jpg"
     content: |
       I'm a dependable and detail-oriented professional with over **3 years** of hands-on experience 
       in **medical records retrieval**, **HIPAA compliance**, and **multi-channel customer service**.
@@ -208,25 +208,25 @@ params:
         content: |
           Consistently maintains a high-accuracy, high-speed data entry rate across medical records 
           systems, CRM platforms, and documentation workflows.
-        image: /images/achievment.jpg
+        image: "https://picsum.photos/seed/typing300/300/300"
 
       - title: "HIPAA Certified Professional"
         content: |
           Completed HIPAA Privacy & Security training in 2024. Applied daily throughout tenure at 
           Datafied managing sensitive Protected Health Information (PHI) for healthcare clients.
-        image: /images/achievment.jpg
+        image: "https://picsum.photos/seed/healthcare400/300/300"
 
       - title: "3+ Years Healthcare-Adjacent Experience"
         content: |
           Built a consistent track record across medical records retrieval, pharmacy customer service, 
           and large-scale e-commerce support — demonstrating adaptability in regulated industries.
-        image: /images/achievment.jpg
+        image: "https://picsum.photos/seed/office500/300/300"
 
       - title: "Multi-Platform CRM Proficiency"
         content: |
           Hands-on experience with Salesforce and Zendesk CRM platforms in high-volume customer 
           service environments, including case creation, tracking, and escalation workflows.
-        image: /images/achievment.jpg
+        image: "https://picsum.photos/seed/crmsoftware/300/300"
 
   contact:
     enable: true
