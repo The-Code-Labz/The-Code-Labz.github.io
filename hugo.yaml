@@ -1,0 +1,260 @@
+baseURL: "https://The-Code-Labz.github.io/"
+languageCode: en-us
+title: "Davonte Lynton"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Davonte Lynton"
+  description: "Medical Records & Customer Service Specialist | Las Vegas, NV"
+  favicon: "/fav.png"
+  useBootstrapCDN: true
+  animate: true
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  color:
+    textColor: "#343a40"
+    secondaryTextColor: "#6c757d"
+    backgroundColor: "#eaedf0"
+    primaryColor: "#0d6efd"
+    secondaryColor: "#f8f9fa"
+
+  navbar:
+    align: ms-auto
+    brandName: "Davonte Lynton"
+    disableSearch: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: true
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Davonte Lynton"
+    subtitle: "Medical Records & Customer Service Specialist"
+    content: |
+      A dedicated professional with 3+ years of experience in HIPAA-compliant medical records 
+      management and high-volume customer service operations. Based in Las Vegas, NV.
+    image: /images/hero.svg
+    roundImage: false
+    button:
+      enable: true
+      name: "Contact Me"
+      url: "#contact"
+      download: false
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fas fa-envelope
+          url: "mailto:dlynton01@gmail.com"
+        - icon: fas fa-phone
+          url: "tel:7146317304"
+        - icon: fab fa-github
+          url: "https://github.com/The-Code-Labz"
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |
+      I'm a dependable and detail-oriented professional with over **3 years** of hands-on experience 
+      in **medical records retrieval**, **HIPAA compliance**, and **multi-channel customer service**.
+
+      My background spans healthcare administration, retail pharmacy, and large-scale e-commerce 
+      support — giving me a versatile foundation across regulated and fast-paced environments.
+
+      I bring a **75+ WPM typing speed** with **99%+ accuracy**, proficiency in Salesforce and Zendesk 
+      CRM platforms, and a consistent record of maintaining data integrity under high-volume conditions.
+
+      I am currently **open to new opportunities** in medical records management, healthcare 
+      administration, and customer service roles across Las Vegas and remotely.
+    skills:
+      enable: true
+      title: "Core Skills:"
+      items:
+        - "HIPAA Compliance & Medical Records"
+        - "Release of Information (ROI) Workflows"
+        - "Salesforce CRM"
+        - "Zendesk"
+        - "Microsoft Office 365 (Word, Excel)"
+        - "Data Entry — 75+ WPM / 99%+ Accuracy"
+        - "Multi-Channel Customer Support"
+        - "Insurance Claims Coordination"
+        - "Dual-Monitor / Multi-System Navigation"
+        - "Phone, Email & Chat Support"
+
+  experience:
+    enable: true
+    items:
+      - job: "Medical Records Retrieval Associate"
+        company: "Datafied"
+        companyUrl: ""
+        date: "2023 – 2025"
+        info:
+          enable: true
+          content: "Las Vegas, NV"
+        featuredLink:
+          enable: false
+        content: |
+          - Managed high-volume medical records retrieval requests in full compliance with HIPAA regulations
+          - Processed release-of-information (ROI) requests from hospitals, clinics, and insurance providers
+          - Maintained strict data integrity across dual-monitor, multi-system workflows
+          - Coordinated directly with healthcare facilities to ensure accurate and timely record delivery
+          - Tracked request statuses and updated records in internal case management systems
+
+      - job: "Customer Service Representative"
+        company: "Amazon"
+        companyUrl: "https://amazon.com"
+        date: "Mar 2021 – Dec 2022"
+        info:
+          enable: true
+          content: "Hazelwood, MO"
+        featuredLink:
+          enable: false
+        content: |
+          - Delivered high-volume customer support via phone, email, and live chat channels
+          - Resolved complex order disputes, returns, refunds, and account-level issues
+          - Utilized Salesforce and Zendesk for case management and customer interaction logging
+          - Maintained service quality and CSAT scores consistently at or above team benchmarks
+          - Handled sensitive customer account data in compliance with internal privacy policies
+
+      - job: "Customer Service Associate"
+        company: "Walgreens"
+        companyUrl: "https://walgreens.com"
+        date: "Mar 2019 – Mar 2021"
+        info:
+          enable: true
+          content: "St. Louis, MO"
+        featuredLink:
+          enable: false
+        content: |
+          - Provided front-line customer service in a high-traffic retail pharmacy environment
+          - Supported pharmacy operations including prescription coordination and insurance inquiries
+          - Trained and mentored new associates on POS systems and customer service protocols
+          - Processed transactions accurately while managing multiple customer requests simultaneously
+
+      - job: "Front Store Associate"
+        company: "CVS Pharmacy"
+        companyUrl: "https://cvs.com"
+        date: "May 2017 – Oct 2018"
+        info:
+          enable: true
+          content: "St. Louis, MO"
+        featuredLink:
+          enable: false
+        content: |
+          - Assisted customers with product inquiries, pharmacy questions, and store navigation
+          - Maintained store organization, inventory accuracy, and shelf restocking
+          - Operated POS systems and processed cash and card transactions reliably
+
+  education:
+    enable: true
+    index: false
+    items:
+      - title: "CPR & First Aid Certification"
+        school:
+          name: "American Red Cross"
+          url: "https://www.redcross.org"
+        date: "2025"
+        content: |
+          Certified in CPR and First Aid by the American Red Cross. Demonstrates commitment 
+          to safety readiness in healthcare-adjacent professional environments.
+
+      - title: "HIPAA Privacy & Security Training"
+        school:
+          name: "Professional Certification"
+          url: ""
+        date: "2024"
+        content: |
+          Completed comprehensive HIPAA compliance training covering the Privacy Rule, Security Rule, 
+          and proper handling of Protected Health Information (PHI) in operational healthcare settings.
+
+      - title: "General Education Development (GED)"
+        school:
+          name: "Roosevelt High School"
+          url: ""
+        date: "2018"
+        content: "St. Louis, MO"
+
+  achievements:
+    enable: true
+    items:
+      - title: "75+ WPM Typing Speed — 99%+ Accuracy"
+        content: |
+          Consistently maintains a high-accuracy, high-speed data entry rate across medical records 
+          systems, CRM platforms, and documentation workflows.
+        image: /images/achievment.jpg
+
+      - title: "HIPAA Certified Professional"
+        content: |
+          Completed HIPAA Privacy & Security training in 2024. Applied daily throughout tenure at 
+          Datafied managing sensitive Protected Health Information (PHI) for healthcare clients.
+        image: /images/achievment.jpg
+
+      - title: "3+ Years Healthcare-Adjacent Experience"
+        content: |
+          Built a consistent track record across medical records retrieval, pharmacy customer service, 
+          and large-scale e-commerce support — demonstrating adaptability in regulated industries.
+        image: /images/achievment.jpg
+
+      - title: "Multi-Platform CRM Proficiency"
+        content: |
+          Hands-on experience with Salesforce and Zendesk CRM platforms in high-volume customer 
+          service environments, including case creation, tracking, and escalation workflows.
+        image: /images/achievment.jpg
+
+  contact:
+    enable: true
+    title: "Get In Touch"
+    content: |
+      I am actively seeking opportunities in medical records management, healthcare administration, 
+      and customer service. I'd love to connect — please feel free to reach out directly.
+    email: dlynton01@gmail.com
+    btnName: "Email Me"
+    formspree:
+      enable: false
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/The-Code-Labz
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    readTime:
+      enable: false
+      content: "min read"
+    scrollprogress:
+      enable: false
