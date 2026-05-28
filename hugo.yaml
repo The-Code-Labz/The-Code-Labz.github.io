@@ -1,6 +1,6 @@
 baseURL: "https://The-Code-Labz.github.io/"
 languageCode: en-us
-title: "Davonte Lynton"
+title: "Davonte Portfolio"
 theme: hugo-profile
 
 outputs:
@@ -21,7 +21,7 @@ markup:
       unsafe: true
 
 params:
-  title: "Davonte Lynton"
+  title: "Davonte Portfolio"
   description: "Medical Records & Customer Service Specialist | Las Vegas, NV"
   favicon: "/fav.png"
   useBootstrapCDN: true
@@ -42,7 +42,7 @@ params:
 
   navbar:
     align: ms-auto
-    brandName: "Davonte Lynton"
+    brandName: "Davonte Portfolio"
     disableSearch: true
     menus:
       disableAbout: false
