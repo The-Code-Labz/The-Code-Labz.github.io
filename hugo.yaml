@@ -208,25 +208,25 @@ params:
         content: |
           Consistently maintains a high-accuracy, high-speed data entry rate across medical records 
           systems, CRM platforms, and documentation workflows.
-        image: "https://picsum.photos/seed/typing300/300/300"
+        image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300&h=300&fit=crop&crop=center"
 
       - title: "HIPAA Certified Professional"
         content: |
           Completed HIPAA Privacy & Security training in 2024. Applied daily throughout tenure at 
           Datafied managing sensitive Protected Health Information (PHI) for healthcare clients.
-        image: "https://picsum.photos/seed/healthcare400/300/300"
+        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=300&h=300&fit=crop&crop=center"
 
       - title: "3+ Years Healthcare-Adjacent Experience"
         content: |
           Built a consistent track record across medical records retrieval, pharmacy customer service, 
           and large-scale e-commerce support — demonstrating adaptability in regulated industries.
-        image: "https://picsum.photos/seed/office500/300/300"
+        image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=300&h=300&fit=crop&crop=center"
 
       - title: "Multi-Platform CRM Proficiency"
         content: |
           Hands-on experience with Salesforce and Zendesk CRM platforms in high-volume customer 
           service environments, including case creation, tracking, and escalation workflows.
-        image: "https://picsum.photos/seed/crmsoftware/300/300"
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=300&fit=crop&crop=center"
 
   contact:
     enable: true
