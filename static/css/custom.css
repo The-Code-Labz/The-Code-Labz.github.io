@@ -3,7 +3,7 @@
    Professional, clean, zero dead space
    ============================================================ */
 
-/* ── Remove bottom SVG dead space from hero ──────────────── */
+/* ── Remove bottom SVG dead space (safety net) ───────────── */
 .hero-bottom-svg {
   display: none !important;
 }
@@ -15,29 +15,29 @@
 }
 
 #about {
-  padding-top: 2.5rem !important;
-  padding-bottom: 2rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 #experience {
-  padding-top: 2.5rem !important;
-  padding-bottom: 2.5rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
 }
 
 #education {
-  padding-top: 2.5rem !important;
-  padding-bottom: 2rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 1.5rem !important;
   background-color: #f4f6f9;
 }
 
 #achievements {
-  padding-top: 2.5rem !important;
-  padding-bottom: 2rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 #contact {
-  padding-top: 2.5rem !important;
-  padding-bottom: 2.5rem !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
   background-color: #f4f6f9;
 }
 
@@ -53,12 +53,11 @@
   font-size: 1.85rem;
 }
 
-/* ── Kill extra py-5 on Bootstrap inner rows ─────────────── */
-/* These are hardcoded in the theme — our template overrides  */
-/* handle about/education, but belt-and-suspenders CSS here   */
+/* ── Kill any lingering inner row padding ────────────────── */
 #about .row.justify-content-center,
-#education .row.justify-content-center {
-  padding-top: 0.5rem !important;
+#education .row.justify-content-center,
+#achievements .row.justify-content-center {
+  padding-top: 0.25rem !important;
   padding-bottom: 0 !important;
 }
 
@@ -67,13 +66,18 @@
   font-size: 2.6rem;
   font-weight: 700;
   line-height: 1.2;
+  margin-bottom: 0.5rem;
 }
 
 #hero h2 {
   font-size: 1.2rem;
   font-weight: 400;
   color: #6c757d;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#hero .hero-content {
+  margin-bottom: 1rem;
 }
 
 #hero .img-thumbnail {
@@ -109,9 +113,13 @@
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.25rem;
   overflow: hidden;
   transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.exp-card:last-child {
+  margin-bottom: 0;
 }
 
 .exp-card:hover {
@@ -131,17 +139,17 @@
 }
 
 .exp-card-inner {
-  padding: 1.4rem 1.6rem;
+  padding: 1.25rem 1.5rem;
   flex: 1;
   min-width: 0;
 }
 
 /* Job title */
 .exp-job-title {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   font-weight: 700;
   color: #1a202c;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
 }
 
 /* Meta row: company + location */
@@ -181,7 +189,7 @@
   color: #0a58ca;
   font-size: 0.82rem;
   font-weight: 600;
-  padding: 0.3rem 0.75rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 20px;
   white-space: nowrap;
   flex-shrink: 0;
@@ -189,8 +197,8 @@
 
 /* Duties / responsibilities */
 .exp-duties {
-  margin-top: 0.85rem;
-  padding-top: 0.85rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
   border-top: 1px solid #e9ecef;
 }
 
@@ -203,10 +211,14 @@
 .exp-duties ul li {
   position: relative;
   padding-left: 1.1rem;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.4rem;
   color: #4a5568;
-  font-size: 0.93rem;
-  line-height: 1.55;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.exp-duties ul li:last-child {
+  margin-bottom: 0;
 }
 
 .exp-duties ul li::before {
@@ -231,6 +243,7 @@
   border: none;
   box-shadow: 0 2px 10px rgba(0,0,0,0.07);
   border-radius: 8px;
+  margin-bottom: 0.75rem;
 }
 
 #education .card-title {
@@ -255,7 +268,7 @@
 #achievements .card-img-top {
   border-radius: 8px 8px 0 0;
   object-fit: cover;
-  height: 160px;
+  height: 150px;
   width: 100%;
 }
 
@@ -268,7 +281,7 @@
 /* ── Skills list polish ───────────────────────────────────── */
 #about .content ul li {
   font-size: 0.93rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
 }
 
 /* ── Mobile responsiveness ────────────────────────────────── */
@@ -283,8 +296,8 @@
   #education,
   #achievements,
   #contact {
-    padding-top: 2rem !important;
-    padding-bottom: 1.5rem !important;
+    padding-top: 1.75rem !important;
+    padding-bottom: 1.25rem !important;
   }
 
   .exp-card-inner {
@@ -297,7 +310,7 @@
 
   .exp-date-badge {
     font-size: 0.78rem;
-    padding: 0.25rem 0.6rem;
+    padding: 0.22rem 0.6rem;
   }
 
   .exp-card-top {
@@ -307,5 +320,9 @@
 
   #hero h1 {
     font-size: 2rem;
+  }
+
+  #hero h2 {
+    font-size: 1rem;
   }
 }
