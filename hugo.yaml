@@ -58,10 +58,12 @@ params:
     title: "Davonte Lynton"
     subtitle: "Medical Records & Customer Service Specialist"
     content: |
-      A dedicated professional with 3+ years of experience in HIPAA-compliant medical records 
+      A dedicated professional with 3+ years of experience in HIPAA-compliant medical records
       management and high-volume customer service operations. Based in Las Vegas, NV.
     image: "https://images.neurolearninglabs.com/i/c82b42e1-2c4a-4366-903c-afad637222e2.jpg"
     roundImage: true
+    bottomImage:
+      enable: false
     button:
       enable: true
       name: "Contact Me"
@@ -82,16 +84,16 @@ params:
     title: "About Me"
     image: "https://images.neurolearninglabs.com/i/c82b42e1-2c4a-4366-903c-afad637222e2.jpg"
     content: |
-      I'm a dependable and detail-oriented professional with over **3 years** of hands-on experience 
+      I'm a dependable and detail-oriented professional with over **3 years** of hands-on experience
       in **medical records retrieval**, **HIPAA compliance**, and **multi-channel customer service**.
 
-      My background spans healthcare administration, retail pharmacy, and large-scale e-commerce 
+      My background spans healthcare administration, retail pharmacy, and large-scale e-commerce
       support — giving me a versatile foundation across regulated and fast-paced environments.
 
-      I bring a **75+ WPM typing speed** with **99%+ accuracy**, proficiency in Salesforce and Zendesk 
+      I bring a **75+ WPM typing speed** with **99%+ accuracy**, proficiency in Salesforce and Zendesk
       CRM platforms, and a consistent record of maintaining data integrity under high-volume conditions.
 
-      I am currently **open to new opportunities** in medical records management, healthcare 
+      I am currently **open to new opportunities** in medical records management, healthcare
       administration, and customer service roles across Las Vegas and remotely.
     skills:
       enable: true
@@ -110,6 +112,7 @@ params:
 
   experience:
     enable: true
+    title: "Work Experience"
     items:
       - job: "Medical Records Retrieval Associate"
         company: "Datafied"
@@ -126,6 +129,8 @@ params:
           - Maintained strict data integrity across dual-monitor, multi-system workflows
           - Coordinated directly with healthcare facilities to ensure accurate and timely record delivery
           - Tracked request statuses and updated records in internal case management systems
+          - Communicated professionally with legal teams, insurance adjusters, and healthcare providers
+          - Ensured all records were handled per state-specific confidentiality and compliance requirements
 
       - job: "Customer Service Representative"
         company: "Amazon"
@@ -138,10 +143,12 @@ params:
           enable: false
         content: |
           - Delivered high-volume customer support via phone, email, and live chat channels
-          - Resolved complex order disputes, returns, refunds, and account-level issues
-          - Utilized Salesforce and Zendesk for case management and customer interaction logging
-          - Maintained service quality and CSAT scores consistently at or above team benchmarks
+          - Resolved complex order disputes, returns, refunds, and account-level escalations
+          - Utilized Salesforce and Zendesk CRM for case management and interaction logging
+          - Maintained CSAT scores consistently at or above team benchmarks
           - Handled sensitive customer account data in compliance with internal privacy policies
+          - Collaborated with warehouse and fulfillment teams to resolve shipping and delivery issues
+          - Consistently met daily case volume targets in a fast-paced contact center environment
 
       - job: "Customer Service Associate"
         company: "Walgreens"
@@ -156,7 +163,9 @@ params:
           - Provided front-line customer service in a high-traffic retail pharmacy environment
           - Supported pharmacy operations including prescription coordination and insurance inquiries
           - Trained and mentored new associates on POS systems and customer service protocols
-          - Processed transactions accurately while managing multiple customer requests simultaneously
+          - Processed transactions accurately while managing multiple simultaneous customer requests
+          - Assisted with inventory management, restocking, and store organization
+          - Handled cash, card, and insurance payment transactions with accuracy and accountability
 
       - job: "Front Store Associate"
         company: "CVS Pharmacy"
@@ -169,8 +178,9 @@ params:
           enable: false
         content: |
           - Assisted customers with product inquiries, pharmacy questions, and store navigation
-          - Maintained store organization, inventory accuracy, and shelf restocking
+          - Maintained store organization, planogram compliance, and shelf restocking
           - Operated POS systems and processed cash and card transactions reliably
+          - Supported loss prevention protocols and maintained a clean, safe store environment
 
   education:
     enable: true
@@ -182,7 +192,7 @@ params:
           url: "https://www.redcross.org"
         date: "2025"
         content: |
-          Certified in CPR and First Aid by the American Red Cross. Demonstrates commitment 
+          Certified in CPR and First Aid by the American Red Cross. Demonstrates commitment
           to safety readiness in healthcare-adjacent professional environments.
 
       - title: "HIPAA Privacy & Security Training"
@@ -191,7 +201,7 @@ params:
           url: ""
         date: "2024"
         content: |
-          Completed comprehensive HIPAA compliance training covering the Privacy Rule, Security Rule, 
+          Completed comprehensive HIPAA compliance training covering the Privacy Rule, Security Rule,
           and proper handling of Protected Health Information (PHI) in operational healthcare settings.
 
       - title: "General Education Development (GED)"
@@ -206,25 +216,25 @@ params:
     items:
       - title: "75+ WPM Typing Speed — 99%+ Accuracy"
         content: |
-          Consistently maintains a high-accuracy, high-speed data entry rate across medical records 
+          Consistently maintains a high-accuracy, high-speed data entry rate across medical records
           systems, CRM platforms, and documentation workflows.
         image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300&h=300&fit=crop&crop=center"
 
       - title: "HIPAA Certified Professional"
         content: |
-          Completed HIPAA Privacy & Security training in 2024. Applied daily throughout tenure at 
+          Completed HIPAA Privacy & Security training in 2024. Applied daily throughout tenure at
           Datafied managing sensitive Protected Health Information (PHI) for healthcare clients.
         image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=300&h=300&fit=crop&crop=center"
 
       - title: "3+ Years Healthcare-Adjacent Experience"
         content: |
-          Built a consistent track record across medical records retrieval, pharmacy customer service, 
+          Built a consistent track record across medical records retrieval, pharmacy customer service,
           and large-scale e-commerce support — demonstrating adaptability in regulated industries.
         image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=300&h=300&fit=crop&crop=center"
 
       - title: "Multi-Platform CRM Proficiency"
         content: |
-          Hands-on experience with Salesforce and Zendesk CRM platforms in high-volume customer 
+          Hands-on experience with Salesforce and Zendesk CRM platforms in high-volume customer
           service environments, including case creation, tracking, and escalation workflows.
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=300&fit=crop&crop=center"
 
@@ -232,7 +242,7 @@ params:
     enable: true
     title: "Get In Touch"
     content: |
-      I am actively seeking opportunities in medical records management, healthcare administration, 
+      I am actively seeking opportunities in medical records management, healthcare administration,
       and customer service. I'd love to connect — please feel free to reach out directly.
     email: dlynton01@gmail.com
     btnName: "Email Me"

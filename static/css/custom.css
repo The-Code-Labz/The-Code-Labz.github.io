@@ -1,0 +1,254 @@
+/* ============================================================
+   Davonte Portfolio — Custom Overrides
+   Professional, clean, no dead spaces
+   ============================================================ */
+
+/* ── Global: tighten section spacing ─────────────────────── */
+section {
+  position: relative;
+}
+
+/* Remove bottom SVG dead space from hero */
+.hero-bottom-svg {
+  display: none !important;
+}
+
+/* Tighten hero section bottom padding */
+#hero {
+  padding-bottom: 2rem !important;
+}
+
+/* Ensure sections flow together without large gaps */
+#about,
+#experience,
+#education,
+#achievements,
+#contact {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+/* ── Hero section polish ──────────────────────────────────── */
+#hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#hero h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #6c757d;
+  margin-bottom: 1.25rem;
+}
+
+#hero .img-thumbnail {
+  border: 3px solid #0d6efd;
+  box-shadow: 0 8px 32px rgba(13, 110, 253, 0.18);
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ── Experience Section ───────────────────────────────────── */
+.exp-section {
+  background-color: #f4f6f9;
+}
+
+.exp-section-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.exp-section-sub {
+  color: #6c757d;
+  font-size: 0.97rem;
+  margin-bottom: 0;
+}
+
+/* Card layout */
+.exp-card {
+  position: relative;
+  display: flex;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.exp-card:hover {
+  box-shadow: 0 6px 24px rgba(13, 110, 253, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Left accent bar */
+.exp-card-accent {
+  width: 5px;
+  background: linear-gradient(180deg, #0d6efd 0%, #6ea8fe 100%);
+  flex-shrink: 0;
+}
+
+.exp-card--first .exp-card-accent {
+  background: linear-gradient(180deg, #0a58ca 0%, #0d6efd 100%);
+}
+
+.exp-card-inner {
+  padding: 1.4rem 1.6rem;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Job title */
+.exp-job-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.3rem;
+}
+
+/* Meta row: company + location */
+.exp-meta-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  font-size: 0.92rem;
+  margin-bottom: 0;
+}
+
+.exp-company {
+  font-weight: 600;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.exp-company:hover {
+  text-decoration: underline;
+}
+
+.exp-divider {
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.exp-location {
+  color: #6c757d;
+  font-size: 0.88rem;
+}
+
+.exp-location i {
+  font-size: 0.78rem;
+  margin-right: 2px;
+}
+
+/* Date badge */
+.exp-date-badge {
+  display: inline-block;
+  background: #e7f0ff;
+  color: #0a58ca;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Duties / responsibilities */
+.exp-duties {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.exp-duties ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+
+.exp-duties ul li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.45rem;
+  color: #4a5568;
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
+.exp-duties ul li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #0d6efd;
+  font-size: 0.75rem;
+  top: 3px;
+}
+
+/* ── About section ────────────────────────────────────────── */
+#about .img-thumbnail {
+  border: 3px solid #0d6efd;
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.12);
+  border-radius: 8px !important;
+  object-fit: cover;
+}
+
+/* ── Education section ────────────────────────────────────── */
+#education {
+  background-color: #f4f6f9;
+}
+
+/* ── Achievements section ─────────────────────────────────── */
+.achievements-card {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.achievements-card:hover {
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.12) !important;
+  transform: translateY(-2px);
+}
+
+/* ── Contact section ──────────────────────────────────────── */
+#contact {
+  background-color: #f4f6f9;
+}
+
+/* ── Navbar brand ─────────────────────────────────────────── */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+/* ── Skills list polish ───────────────────────────────────── */
+.skills li {
+  font-size: 0.93rem;
+}
+
+/* ── Mobile responsiveness for experience ─────────────────── */
+@media (max-width: 576px) {
+  .exp-card-inner {
+    padding: 1rem 1.1rem;
+  }
+
+  .exp-job-title {
+    font-size: 1rem;
+  }
+
+  .exp-date-badge {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .exp-card-top {
+    flex-direction: column;
+    gap: 0.5rem !important;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+}
