@@ -1,31 +1,65 @@
 /* ============================================================
    Davonte Portfolio — Custom Overrides
-   Professional, clean, no dead spaces
+   Professional, clean, zero dead space
    ============================================================ */
 
-/* ── Global: tighten section spacing ─────────────────────── */
-section {
-  position: relative;
-}
-
-/* Remove bottom SVG dead space from hero */
+/* ── Remove bottom SVG dead space from hero ──────────────── */
 .hero-bottom-svg {
   display: none !important;
 }
 
-/* Tighten hero section bottom padding */
+/* ── Global section spacing — tight and intentional ─────── */
 #hero {
+  padding-top: 3rem !important;
   padding-bottom: 2rem !important;
 }
 
-/* Ensure sections flow together without large gaps */
-#about,
-#experience,
-#education,
-#achievements,
+#about {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2rem !important;
+}
+
+#experience {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+#education {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2rem !important;
+  background-color: #f4f6f9;
+}
+
+#achievements {
+  padding-top: 2.5rem !important;
+  padding-bottom: 2rem !important;
+}
+
 #contact {
-  padding-top: 3.5rem !important;
-  padding-bottom: 3.5rem !important;
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+  background-color: #f4f6f9;
+}
+
+/* ── Section heading spacing ─────────────────────────────── */
+#about h3,
+#experience h3,
+#education h3,
+#achievements h3,
+#contact h3 {
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 700;
+  font-size: 1.85rem;
+}
+
+/* ── Kill extra py-5 on Bootstrap inner rows ─────────────── */
+/* These are hardcoded in the theme — our template overrides  */
+/* handle about/education, but belt-and-suspenders CSS here   */
+#about .row.justify-content-center,
+#education .row.justify-content-center {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0 !important;
 }
 
 /* ── Hero section polish ──────────────────────────────────── */
@@ -36,7 +70,7 @@ section {
 }
 
 #hero h2 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #6c757d;
   margin-bottom: 1.25rem;
@@ -58,8 +92,8 @@ section {
 
 .exp-section-title {
   font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.85rem;
+  margin-bottom: 0.3rem;
 }
 
 .exp-section-sub {
@@ -75,7 +109,7 @@ section {
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.4rem;
   overflow: hidden;
   transition: box-shadow 0.25s ease, transform 0.2s ease;
 }
@@ -140,11 +174,6 @@ section {
   font-size: 0.88rem;
 }
 
-.exp-location i {
-  font-size: 0.78rem;
-  margin-right: 2px;
-}
-
 /* Date badge */
 .exp-date-badge {
   display: inline-block;
@@ -197,24 +226,37 @@ section {
   object-fit: cover;
 }
 
-/* ── Education section ────────────────────────────────────── */
-#education {
-  background-color: #f4f6f9;
+/* ── Education cards ──────────────────────────────────────── */
+#education .card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  border-radius: 8px;
 }
 
-/* ── Achievements section ─────────────────────────────────── */
-.achievements-card {
+#education .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+/* ── Achievements cards ───────────────────────────────────── */
+#achievements .card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  border-radius: 10px;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.achievements-card:hover {
+#achievements .card:hover {
   box-shadow: 0 6px 20px rgba(13, 110, 253, 0.12) !important;
   transform: translateY(-2px);
 }
 
-/* ── Contact section ──────────────────────────────────────── */
-#contact {
-  background-color: #f4f6f9;
+#achievements .card-img-top {
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  height: 160px;
+  width: 100%;
 }
 
 /* ── Navbar brand ─────────────────────────────────────────── */
@@ -224,12 +266,27 @@ section {
 }
 
 /* ── Skills list polish ───────────────────────────────────── */
-.skills li {
+#about .content ul li {
   font-size: 0.93rem;
+  margin-bottom: 0.2rem;
 }
 
-/* ── Mobile responsiveness for experience ─────────────────── */
-@media (max-width: 576px) {
+/* ── Mobile responsiveness ────────────────────────────────── */
+@media (max-width: 768px) {
+  #hero {
+    padding-top: 2rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  #about,
+  #experience,
+  #education,
+  #achievements,
+  #contact {
+    padding-top: 2rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
   .exp-card-inner {
     padding: 1rem 1.1rem;
   }
