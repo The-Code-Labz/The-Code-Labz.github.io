@@ -33,18 +33,18 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
-/* ── Floating Glassmorphic Navigation ───────────────────── */
+/* ── Floating Glassmorphic Navigation (High Contrast) ──────── */
 .navbar {
-  background: rgba(253, 252, 251, 0.8) !important;
+  background: var(--primary-color) !important; /* Deep forest sage for perfect contrast */
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
-  border-bottom: 1px solid rgba(30, 56, 47, 0.06);
+  border-bottom: 1px solid rgba(253, 252, 251, 0.08);
   padding: 0.85rem 1rem !important;
   transition: var(--transition-smooth);
 }
 
 .dark-theme .navbar {
-  background: rgba(22, 25, 23, 0.8) !important;
+  background: rgba(22, 25, 23, 0.95) !important;
   border-bottom: 1px solid rgba(227, 231, 229, 0.05);
 }
 
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit', sans-serif;
   font-weight: 700 !important;
   font-size: 1.25rem !important;
-  color: var(--primary-color) !important;
+  color: #ffffff !important; /* White letters for striking contrast */
   letter-spacing: -0.03em;
 }
 
@@ -60,22 +60,57 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit', sans-serif;
   font-weight: 500 !important;
   font-size: 0.92rem !important;
-  color: var(--text-color) !important;
+  color: rgba(253, 252, 251, 0.88) !important; /* Elegant off-white letters */
   margin: 0 0.35rem;
   padding: 0.4rem 0.8rem !important;
   border-radius: 6px;
   transition: var(--transition-smooth) !important;
 }
 
-.nav-link:hover, 
+.nav-link:hover {
+  color: var(--accent-gold) !important; /* Warm champagne gold hover */
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
 .nav-link.active {
-  color: var(--primary-color) !important;
-  background-color: var(--highlight-green) !important;
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.dark-theme .nav-link {
+  color: rgba(227, 231, 229, 0.85) !important;
 }
 
 .dark-theme .nav-link:hover {
   background-color: rgba(123, 176, 156, 0.12) !important;
-  color: var(--primary-color) !important;
+  color: var(--primary-color-dark) !important;
+}
+
+.dark-theme .nav-link.active {
+  background-color: rgba(123, 176, 156, 0.18) !important;
+  color: #ffffff !important;
+}
+
+/* Ensure navbar toggler and theme switcher are high contrast */
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  color: #ffffff !important;
+}
+
+.navbar-toggler svg {
+  fill: currentColor !important;
+  color: #ffffff !important;
+}
+
+#theme-toggle {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+
+#theme-toggle:hover {
+  color: var(--accent-gold) !important;
 }
 
 /* ── Section Rhythm (Breathing Room) ─────────────────────── */
@@ -110,6 +145,7 @@ section h3::after {
   background-color: var(--background-color) !important;
   padding-top: 7rem !important;
   padding-bottom: 4.5rem !important;
+  min-height: auto !important; /* Eliminate excessive vertical dead space below hero content */
 }
 
 #hero .subtitle {
