@@ -34,11 +34,18 @@ params:
     textAlign: left
 
   color:
-    textColor: "#343a40"
-    secondaryTextColor: "#6c757d"
-    backgroundColor: "#eaedf0"
-    primaryColor: "#0d6efd"
-    secondaryColor: "#f8f9fa"
+    textColor: "#232725"
+    secondaryTextColor: "#59615d"
+    backgroundColor: "#fdfcfb"
+    primaryColor: "#1e382f"
+    secondaryColor: "#f4f2ee"
+    darkmode:
+      textColor: "#e3e7e5"
+      secondaryTextColor: "#9ba3a0"
+      backgroundColor: "#161917"
+      secondaryBackgroundColor: "#1f2421"
+      primaryColor: "#7bb09c"
+      secondaryColor: "#1f2421"
 
   navbar:
     align: ms-auto

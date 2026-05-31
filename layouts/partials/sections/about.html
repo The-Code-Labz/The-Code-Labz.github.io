@@ -15,12 +15,12 @@
                 {{ $about.content | markdownify }}
 
                 {{ if .Site.Params.about.skills.enable }}
-                {{ $about.skills.title | default .Site.Params.about.skills.title }}
-                <ul>
+                <h5 class="skills-title mt-4 mb-3" style="font-family: 'Outfit', sans-serif; font-weight: 600; color: var(--primary-color);">{{ $about.skills.title | default .Site.Params.about.skills.title }}</h5>
+                <div class="skills-container d-flex flex-wrap gap-2">
                     {{ range .Site.Params.about.skills.items }}
-                    <li>{{ . | markdownify }}</li>
+                    <span class="skill-tag">{{ . | markdownify }}</span>
                     {{ end }}
-                </ul>
+                </div>
                 {{ end }}
             </div>
         </div>
